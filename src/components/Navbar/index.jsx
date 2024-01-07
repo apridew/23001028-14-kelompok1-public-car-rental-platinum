@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import { HashLink } from "react-router-hash-link";
 import * as formater from "../../helpers/formaters";
+import Button from "../Button";
 
 const Navbar = () => {
   return (
@@ -82,6 +83,9 @@ const Navbar = () => {
                   <HashLink smooth={true} to={"/#faq"} className="nav-link">
                     FAQ
                   </HashLink>
+                </li>
+                <li>
+                  <Button link="/register" name="Register" />
                 </li>
               </ul>
             </div>
